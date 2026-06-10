@@ -1,6 +1,8 @@
 # ZephyraTech Backend
 
-Spring Boot backend for the ZephyraTech project, featuring JWT-based authentication and PostgreSQL integration.
+Spring Boot backend for the ZephyraTech project, featuring JWT-based authentication and SQLite integration for local development.
+
+**Live API**: [https://zephyratech-task-backend.onrender.com](https://zephyratech-task-backend.onrender.com)
 
 ## 🚀 Features
 
@@ -56,4 +58,4 @@ The application requires the following environment variables or `application.pro
    mvn spring-boot:run
    ```
 
-The backend server will start on [http://localhost:8080](http://localhost:8080).
+The backend server will start on [https://zephyratech-task-backend.onrender.com](https://zephyratech-task-backend.onrender.com) (or http://localhost:8080 locally).
