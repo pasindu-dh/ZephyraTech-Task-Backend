@@ -8,9 +8,7 @@ Spring Boot backend for the ZephyraTech project, featuring JWT-based authenticat
 
 - **JWT Authentication**: Secure stateless authentication using JSON Web Tokens.
 - **User Management**: Signup and Signin endpoints with BCrypt password hashing.
-- **Database Integration**: Seamless connection to PostgreSQL (Supabase).
-- **Security**: Pre-configured CORS and Spring Security filters.
-- **RESTful API**: Clean API structure for frontend integration.
+- **Database Integration**: Local file-based storage using SQLite for easy setup and development.
 
 ## 🛠️ Tech Stack
 
@@ -18,7 +16,8 @@ Spring Boot backend for the ZephyraTech project, featuring JWT-based authenticat
 - Spring Boot 3.2.2
 - Spring Security
 - Spring Data JPA
-- PostgreSQL Driver
+- SQLite JDBC Driver
+- Hibernate Community Dialects
 - JJWT (Java JWT Library)
 - Lombok
 
@@ -30,11 +29,11 @@ Spring Boot backend for the ZephyraTech project, featuring JWT-based authenticat
 
 ## ⚙️ Configuration
 
-The application requires the following environment variables or `application.properties` settings:
+The application is pre-configured to use a local SQLite database (`zephyratech.db`).
 
-- `DB_URL`: JDBC URL for your PostgreSQL database.
-- `DB_USERNAME`: Database username.
-- `DB_PASSWORD`: Database password.
+- `spring.datasource.url`: `jdbc:sqlite:zephyratech.db`
+- `spring.datasource.driver-class-name`: `org.sqlite.JDBC`
+- `spring.jpa.properties.hibernate.dialect`: `org.hibernate.community.dialect.SQLiteDialect`
 
 ## 🏗️ Getting Started
 
