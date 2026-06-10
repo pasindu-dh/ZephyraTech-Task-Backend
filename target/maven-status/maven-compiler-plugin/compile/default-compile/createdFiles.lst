@@ -1,0 +1,13 @@
+com\zephyratech\backend\payload\response\MessageResponse.class
+com\zephyratech\backend\controllers\AuthController.class
+com\zephyratech\backend\security\jwt\JwtUtils.class
+com\zephyratech\backend\security\services\UserDetailsServiceImpl.class
+com\zephyratech\backend\payload\request\SignupRequest.class
+com\zephyratech\backend\security\WebSecurityConfig.class
+com\zephyratech\backend\security\jwt\AuthTokenFilter.class
+com\zephyratech\backend\BackendApplication.class
+com\zephyratech\backend\models\User.class
+com\zephyratech\backend\payload\request\LoginRequest.class
+com\zephyratech\backend\security\services\UserDetailsImpl.class
+com\zephyratech\backend\repository\UserRepository.class
+com\zephyratech\backend\payload\response\JwtResponse.class
